@@ -55,7 +55,7 @@ create_sock:
 struct_sockaddr:    
     ; struct sockaddr = {AF_INET; PORT; 0x0; 0x0}
 
-    push rdx                        ; 0 out the stack for struct
+    ;push rdx                        ; 0 out the stack for struct
     push rdx
 
     mov byte [rsp], AF_INET         ; sockaddr.sa_family = AF_INET (u_char)
