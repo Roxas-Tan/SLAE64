@@ -68,7 +68,7 @@ struct_sockaddr:
     ; server.sin_addr.s_addr = inet_addr("127.0.0.1")
     ; bzero(&server.sin_zero, 8)
 
-    ;push rdx
+    push rdx
     push rdx
 
     mov dword [rsp + 0x4], NULLFREE_IP
